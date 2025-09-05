@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homem de Ferro - Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav>
+            <div class="logo">IRON MAN</div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#armors" class="nav-link">Armaduras</a>
+                <a href="#timeline" class="nav-link">Linha do Tempo</a>
+                <a href="#facts" class="nav-link">Curiosidades</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="grid-pattern"></div>
+        <div class="particles" id="particles"></div>
+        
+        <div class="container">
+            <div class="arc-reactor">
+                <div class="arc-reactor-inner"></div>
+            </div>
+            
+            <h1 class="hero-title">IRON MAN</h1>
+            
+            <p class="tagline">Gênio. Bilionário. Playboy. Filantropo.</p>
+        </div>
+        
+        <div class="scroll-down" onclick="scrollToSection('about')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">Quem é o Homem de Ferro?</h2>
+        
+        <div class="about-content">
+            <div class="about-image">
+                <img src="img/ironman.png" alt="Homem de Ferro">
+            </div>
+            
+            <div class="about-text">
+                <p>Anthony "Tony" Stark é um gênio inventor e industrial bilionário, que dirige as Indústrias Stark. Inicialmente um fabricante de armas para o exército americano, Stark tem uma mudança de consciência após ser sequestrado por terroristas. Ele constrói uma armadura de alta tecnologia para escapar e decide usar sua tecnologia para proteger o mundo como o super-herói blindado, Homem de Ferro.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Armors Section -->
+    <section id="armors">
+        <div class="container">
+            <h2 class="section-title">Arsenal de Armaduras</h2>
+            
+            <div class="armors-grid">
+                <div class="armor-card" onclick="openModal(0)">
+                    <div class="armor-name">Mark I</div>
+                </div>
+                
+                <div class="armor-card" onclick="openModal(1)">
+                    <div class="armor-name">Mark III</div>
+                </div>
+                
+                <div class="armor-card" onclick="openModal(2)">
+                    <div class="armor-name">Mark VII</div>
+                </div>
+                
+                <div class="armor-card" onclick="openModal(3)">
+                    <div class="armor-name">Mark XLII</div>
+                </div>
+                
+                <div class="armor-card" onclick="openModal(4)">
+                    <div class="armor-name">Mark L</div>
+                </div>
+                
+                <div class="armor-card" onclick="openModal(5)">
+                    <div class="armor-name">Mark LXXXV</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Armor Modal -->
+    <div class="modal" id="armorModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be inserted by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline Section -->
+    <section id="timeline">
+        <div class="container">
+            <h2 class="section-title">Jornada no MCU</h2>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-event">
+                    <div class="event-content">
+                        <h3 class="event-title">Homem de Ferro</h3>
+                        <p>Tony Stark constrói a primeira armadura e se torna o Homem de Ferro.</p>
+                        <div class="event-year">2008</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-content">
+                        <h3 class="event-title">Homem de Ferro 2</h3>
+                        <p>O mundo sabe que Stark é o Homem de Ferro. Ele forja novas alianças e enfrenta um novo inimigo.</p>
+                        <div class="event-year">2010</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-content">
+                        <h3 class="event-title">Os Vingadores</h3>
+                        <p>Stark se junta aos Heróis Mais Poderosos da Terra para salvar Nova York da invasão Chitauri.</p>
+                        <div class="event-year">2012</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-content">
+                        <h3 class="event-title">Homem de Ferro 3</h3>
+                        <p>Stark enfrenta um terrorista conhecido como o Mandarim, em uma jornada de retribuição.</p>
+                        <div class="event-year">2013</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-content">
+                        <h3 class="event-title">Vingadores: Era de Ultron</h3>
+                        <p>Stark cria Ultron, uma IA que se volta contra a humanidade, forçando os Vingadores a se unirem novamente.</p>
+                        <div class="event-year">2015</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-content">
+                        <h3 class="event-title">Capitão América: Guerra Civil</h3>
+                        <p>Uma briga ideológica divide os Vingadores, com Stark liderando a facção pró-registro.</p>
+                        <div class="event-year">2016</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-content">
+                        <h3 class="event-title">Vingadores: Guerra Infinita</h3>
+                        <p>Stark e os Vingadores enfrentam sua maior ameaça: Thanos.</p>
+                        <div class="event-year">2018</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-event">
+                    <div class="event-content">
+                        <h3 class="event-title">Vingadores: Ultimato</h3>
+                        <p>Em um ato final de heroísmo, Stark se sacrifica para derrotar Thanos, salvando o universo.</p>
+                        <div class="event-year">2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facts Section -->
+    <section id="facts">
+        <div class="container">
+            <h2 class="section-title">Você Sabia?</h2>
+            
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <p>O design do capacete foi inspirado em um capacete de justa e um hot rod.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <p>Tony Stark foi um dos membros fundadores dos Vingadores nos quadrinhos e no MCU.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <p>O Reator Arc foi concebido para salvar sua vida após um ferimento no peito.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <p>A fortuna de Tony Stark é estimada em mais de $12.4 bilhões.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <p>A armadura passou por mais de 85 variações principais nos quadrinhos e filmes.</p>
+                </div>
+                
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <p>Stan Lee modelou a personalidade de Tony Stark no excêntrico Howard Hughes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
