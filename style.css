@@ -27,16 +27,16 @@ body {
 .author {
   display: flex;
   align-items: center;
-  gap: 5px; /* espaço entre ícone e nome */
-  color: rgb(167, 12, 12); /* muda a cor do texto */
-  font-size: 15px; /* tamanho da fonte */
+  gap: 5px; 
+  color: rgb(167, 12, 12); 
+  font-size: 15px; 
   font-family: "Marvel", sans-serif; 
   font-weight: 700;
   font-style: italic;
 }
 
 .icon {
-  font-size: 16px; /* tamanho do ícone */
+  font-size: 16px; 
 }
 
 section {
@@ -306,10 +306,10 @@ h1, h2, h3 {
 /* Ajuste das imagens dentro dos cards */
 .armor-card img {
     width: 100%;
-    height: 200px; /* deixa os cards todos iguais */
-    object-fit: contain; /* mantém a proporção da imagem */
+    height: 200px;
+    object-fit: contain; 
     border-radius: 6px;
-    background: transparent; /* fundo padrão se a imagem não preencher */
+    background: transparent; 
     padding: 5px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -581,7 +581,7 @@ nav {
     color: var(--iron-red);
 }
 
-/* Placeholder para imagens que não carregam */
+
 .image-placeholder {
     width: 100%;
     height: 200px;
