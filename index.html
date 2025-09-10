@@ -6,12 +6,17 @@
     <title>Homem de Ferro - Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
     <div class="nav-container">
         <nav>
-            <div class="logo">IRON MAN</div>
+            <div class="logo">IRON MAN PAGE</div>
             <div class="nav-links">
                 <a href="#hero" class="nav-link">Início</a>
                 <a href="#about" class="nav-link">Sobre</a>
@@ -47,6 +52,11 @@
 <section id="about">
     <div class="container">
         <h2 class="section-title">Quem é o Homem de Ferro?</h2>
+
+         <div class="author">
+            <span class="icon">-</span>
+            <span class="name">Por Maria Eduarda Poletti</span>
+        </div>
         
         <div class="about-content">
             <div class="about-image">
@@ -54,44 +64,52 @@
             </div>
             
             <div class="about-text">
-                <p>Anthony "Tony" Stark é um gênio inventor e industrial bilionário, que dirige as Indústrias Stark. Inicialmente um fabricante de armas para o exército americano, Stark tem uma mudança de consciência após ser sequestrado por terroristas. Ele constrói uma armadura de alta tecnologia para escapar e decide usar sua tecnologia para proteger o mundo como o super-herói blindado, Homem de Ferro.</p>
+                <p>Anthony Edward "Tony" Stark é um dos visionários mais brilhantes e influentes da era moderna. Como CEO das Indústrias Stark, ele herdou não apenas um império global de tecnologia e inovação, mas também o legado de seu pai, Howard Stark. Com um QI invejável e um talento natural para a engenharia e a física, Tony revolucionou a indústria de defesa com tecnologias de ponta, tornando-se um nome sinônimo de poder e progresso.
+                    No entanto, uma experiência traumática durante uma demonstração no Afeganistão redefiniu completamente seu propósito. Sequestrado e forçado a criar armas para terroristas, Stark, em vez disso, usou sua genialidade para construir uma armadura eletromecânica de alta tecnologia que não apenas garantiu sua fuga, mas também salvou sua vida — mantendo estilhaços de bomba longe de seu coração. Este episódio serviu como um catalisador para uma profunda transformação pessoal.
+                    De volta à civilização, ele tomou a decisão histórica de encerrar a manufacturing de armas de sua empresa e redirecionar todo seu foco e recursos para um novo objetivo: proteger a humanidade. Aprimorando sua armadura, ele se tornou o vigilante blindado conhecido como Homem de Ferro. Tony Stark não é apenas um inventor; é um homem que confrontou o próprio passado e escolheu usar seu dom para ser um guardião do futuro, provando que um herói é forjado não apenas por sua armadura, mas por suas escolhas.</p>
             </div>
         </div>
     </div>
 </section>
 
     <!-- Armors Section -->
-    <section id="armors">
-        <div class="container">
-            <h2 class="section-title">Arsenal de Armaduras</h2>
+<section id="armors">
+    <div class="container">
+        <h2 class="section-title">Arsenal de Armaduras</h2>
+        
+        <div class="armors-grid">
+            <div class="armor-card" onclick="openModal(0)">
+                <img src="img/Iron_Man_Armor_Model_1-.png" alt="Mark I">
+                <div class="armor-name">Mark I</div>
+            </div>
             
-            <div class="armors-grid">
-                <div class="armor-card" onclick="openModal(0)">
-                    <div class="armor-name">Mark I</div>
-                </div>
-                
-                <div class="armor-card" onclick="openModal(1)">
-                    <div class="armor-name">Mark III</div>
-                </div>
-                
-                <div class="armor-card" onclick="openModal(2)">
-                    <div class="armor-name">Mark VII</div>
-                </div>
-                
-                <div class="armor-card" onclick="openModal(3)">
-                    <div class="armor-name">Mark XLII</div>
-                </div>
-                
-                <div class="armor-card" onclick="openModal(4)">
-                    <div class="armor-name">Mark L</div>
-                </div>
-                
-                <div class="armor-card" onclick="openModal(5)">
-                    <div class="armor-name">Mark LXXXV</div>
-                </div>
+            <div class="armor-card" onclick="openModal(1)">
+                <img src="img/Iron_Man_Armor_MK_III-.png" alt="Mark III">
+                <div class="armor-name">Mark III</div>
+            </div>
+            
+            <div class="armor-card" onclick="openModal(2)">
+                <img src="img/IronManMK_VII-.png" alt="Mark VII">
+                <div class="armor-name">Mark VII</div>
+            </div>
+            
+            <div class="armor-card" onclick="openModal(3)">
+                <img src="img/ironmanMK_XLII-.png" alt="Mark XLII">
+                <div class="armor-name">Mark XLII</div>
+            </div>
+            
+            <div class="armor-card" onclick="openModal(4)">
+                <img src="img/ironmanMK_L-.png" alt="Mark L">
+                <div class="armor-name">Mark L</div>
+            </div>
+            
+            <div class="armor-card" onclick="openModal(5)">
+                <img src="img/ironmanMK_LXXXV-.png" alt="Mark LXXXV">
+                <div class="armor-name">Mark LXXXV</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Armor Modal -->
     <div class="modal" id="armorModal">
@@ -99,7 +117,6 @@
             <button class="close-modal" onclick="closeModal()">&times;</button>
             
             <div class="modal-body" id="modalBody">
-                <!-- Content will be inserted by JavaScript -->
             </div>
         </div>
     </div>
