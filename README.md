@@ -1,7 +1,7 @@
 # 🦾 Iron Man Page - Stark Files
 
 Projeto desenvolvido por mim para praticar **HTML, CSS e JavaScript**, criando uma página inspirada no Homem de Ferro.  
-O site traz informações sobre o personagem, suas armaduras e curiosidades do universo Marvel.
+O site traz informações sobre o personagem, suas armaduras e curiosidades.
 
 ---
 
